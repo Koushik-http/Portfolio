@@ -1,0 +1,233 @@
+:root {
+  --navy-shadow: rgba(0, 0, 0, 0.25);
+  --background-color: #1e1e1e;
+  --lightest-navy: rgba(50, 50, 50, 1);
+  --light-navy: rgb(38, 41, 43);
+  --dark-slate: #2f4f4f;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --theme-color: #64ffda;
+}
+
+/* Only apply cursor: none to non-mobile devices */
+/*
+@media (min-width: 769px) {
+  :root {
+    cursor: none !important;
+  }
+}
+*/
+
+::-moz-selection {
+  color: var(--background-color);
+  background: var(--theme-color);
+}
+
+::selection {
+  color: var(--background-color);
+  background: var(--theme-color);
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--lightest-slate);
+  counter-reset: title;
+}
+
+main {
+  transition: 0.3s ease-in-out;
+}
+
+.blur {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--background-color);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 3px solid var(--background-color);
+  border-radius: 10px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.nav-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #161616;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+}
+
+.hover-this {
+  cursor: none !important;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+/* Only apply hover effects on non-mobile devices */
+@media (min-width: 769px) {
+  .hover-this:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--light-navy);
+    color: var(--theme-color);
+  }
+}
+
+span {
+  display: inline-block;
+  font-family: 'Russo One', sans-serif;
+  font-weight: 400;
+  pointer-events: none;
+  transition: transform 0.1s linear;
+}
+
+/* Custom cursor styles - only visible on desktop */
+/*
+@media (min-width: 769px) {
+  .cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 1.1rem;
+    background-color: var(--theme-color);
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: cursor-float 1.5s ease-in-out infinite;
+    box-shadow: 0 0 10px var(--theme-color);
+    z-index: 9999;
+  }
+
+  .cursor::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--theme-color);
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    animation: trail 0.6s linear infinite;
+  }
+
+  .hover-this:hover ~ .cursor {
+    background-color: var(--lightest-slate);
+    mix-blend-mode: normal;
+    box-shadow: 0 0 20px var(--theme-color);
+  }
+
+  .hover-this:hover .cursor {
+    background-color: var(--theme-color);
+  }
+
+  .cursor.clicked {
+    animation: click-animation 0.3s ease-out;
+  }
+}
+*/
+
+/* Hide cursor completely on mobile */
+
+@media (max-width: 768px) {
+  .cursor {
+    display: none !important;
+  }
+}
+
+@keyframes cursor-float {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes trail {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes click-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 900px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    top: 30%;
+  }
+
+  .hover-this {
+    width: 100%;
+    padding: 20px 0;
+    display: inline-block;
+  }
+}
