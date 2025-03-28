@@ -22,7 +22,7 @@ function Projects() {
       projectName: 'SIST Event Manager',
       projectLink: 'https://koushik-http.github.io/eventmanager/',
       projectDescription:
-        'An event management platform for SIST that enables users to organize, RSVP, and track events. Includes admin features to manage event details and attendees.(As for some security reasons the web site is not hosted on any platform, but you can check the code in the github link. and if you want to see the website activate incognito mage for the website to work)',
+        'An event management platform for SIST that enables users to organize, RSVP, and track events. Includes admin features to manage event details and attendees.(As for some security reasons the web site is not hosted on any platform, but you can check the code in the github link. and if you want to see the website activate incognito mode for the website to work)',
       projectTech: ['React', 'Node.js',"vite","CSS"],
       projectExternalLinks: {
         github: 'https://github.com/Koushik-http/eventmanager.git',
