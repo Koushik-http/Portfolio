@@ -7,16 +7,15 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '',
-        port: '',
-        pathname: '/**',
+        hostname: 'koushik.dev',  // Make sure this is the correct domain for your images
+        pathname: '/**',          // This assumes all images are under this pattern
       },
     ],
     // Optimize image loading
-    minimumCacheTTL: 60,
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    formats: ['image/webp'],
+    minimumCacheTTL: 60,         // Cache TTL (in seconds) for better performance
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],  // Define the image device sizes for responsive images
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],  // Image sizes for different resolution variants
+    formats: ['image/webp'],  // WebP format for better compression and quality
   },
 
   // Enable compiler optimizations
@@ -24,8 +23,7 @@ const nextConfig = {
     // Remove console.log in production
     removeConsole: process.env.NODE_ENV === 'production',
     // Remove react-dev-tools in production
-    reactRemoveProperties:
-      process.env.NODE_ENV === 'production' ? { properties: ['^data-test'] } : false,
+    reactRemoveProperties: process.env.NODE_ENV === 'production' ? { properties: ['^data-test'] } : false,
   },
 
   // Enable experimental features for better performance
@@ -34,7 +32,7 @@ const nextConfig = {
     optimizePackageImports: ['framer-motion', 'lucide-react'],
     // Optimize CSS
     optimizeCss: true,
-    // Enable scroll restoration
+    // Enable scroll restoration for smoother user experience
     scrollRestoration: true,
   },
 
@@ -44,7 +42,7 @@ const nextConfig = {
     if (!dev) {
       config.optimization = {
         ...config.optimization,
-        minimize: true,
+        minimize: true,  // Enable minification in production
         splitChunks: {
           chunks: 'all',
           minSize: 20000,
@@ -108,13 +106,13 @@ const nextConfig = {
   // Enable page caching for better performance
   generateEtags: true,
 
-  // Compress responses
+  // Compress responses to reduce size and improve load times
   compress: true,
 
   // Increase build output details
-  output: 'standalone',
+  output: 'standalone',  // Ensure output for standalone app
 
-  // Disable powered by header
+  // Disable powered by header for better privacy and professionalism
   poweredByHeader: false,
 };
 
