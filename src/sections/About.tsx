@@ -36,7 +36,8 @@ function About() {
     intro:
       'Hello! I am R Koushik varma, a Full Stack Developer passionate about DevOps and AI ML. With experience across a wide array of technologies, I strive to deliver scalable, cost-effective solutions. I hold a Bachelor of Technology from Sathyabama Institute of science and Technology, with a focus on Frontend development, backend development, and intelligent automation.',
     experience:
-      'As a dedicated student passionate about web development, I have honed my skills through a combination of personal projects, academic coursework, and online learning. I’ve developed and deployed several full-stack web applications, utilizing technologies such as HTML, CSS, JavaScript, React, and Node.js. My projects range from simple static websites to more dynamic applications involving APIs and real-time data integration.I’ve gained practical experience by collaborating with fellow students on group projects and contributing to open-source communities. I am constantly improving my technical abilities, and I am eager to apply my skills to real-world problems, bringing fresh perspectives and a strong willingness to learn.',
+      'As a dedicated student passionate about web development, I have honed my skills through a combination of personal projects, academic coursework, and online learning. I’ve developed and deployed several full-stack web applications, utilizing technologies such as HTML, CSS, JavaScript, React, and Node.js.',
+      'My projects range from simple static websites to more dynamic applications involving APIs and real-time data integration.I’ve gained practical experience by collaborating with fellow students on group projects and contributing to open-source communities. I am constantly improving my technical abilities, and I am eager to apply my skills to real-world problems, bringing fresh perspectives and a strong willingness to learn',
   };
 
   return (
