@@ -44,13 +44,13 @@ function Projects() {
     {
       image: '/projects/hotel-ease.png', // Corrected image path
       projectName: 'Hotel Booking Site',
-      projectLink: 'https://hotel-ease-chi.vercel.app/',
+      projectLink: 'hotel-ease-koushik.vercel.app',
       projectDescription:
         'A hotel booking website that allows users to search for rooms, check availability, and make reservations online.',
       projectTech: ['React', 'Node.js', 'PostgreSQL', 'Express'],
       projectExternalLinks: {
         github: 'https://github.com/Koushik-http/Hotel-ease.git',
-        externalLink: 'https://hotel-ease-chi.vercel.app/',
+        externalLink: 'hotel-ease-koushik.vercel.app',
       },
     },
   ];
