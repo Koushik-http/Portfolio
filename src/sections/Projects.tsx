@@ -8,13 +8,13 @@ function Projects() {
     {
       image: '/projects/real-estate.png', // Corrected image path
       projectName: 'Real Estate Website',
-      projectLink: 'https://pride-real-estate.vercel.app/',
+      projectLink: 'https://real-e-state-two.vercel.app/',
       projectDescription:
         'A fully responsive real estate website that allows users to browse properties, filter listings, and get in touch with realtors.',
       projectTech: ['React', 'Node.js', 'MongoDB', 'CSS', 'Express'],
       projectExternalLinks: {
-        github: 'https://github.com/Koushik-http/Pride-real-estate.git',
-        externalLink: 'https://pride-real-estate.vercel.app/',
+        github: 'https://github.com/Koushik-http/Real-E-state.git',
+        externalLink: 'https://real-e-state-two.vercel.app/',
       },
     },
     {
