@@ -40,6 +40,15 @@ function Projects() {
         github: 'https://github.com/Koushik-http/Food-website.git',
         externalLink: 'https://food-website-beta-indol.vercel.app/',
       },
+      {
+      image: '/projects/june.png', // Corrected image path
+      projectName: 'JUNE',
+      projectDescription:
+        'JUNE is an intelligent personal assistant designed to simplify everyday tasks through voice commands and interactive responses.',
+      projectTech: ['Python'],
+      projectExternalLinks: {
+        github: 'https://github.com/Koushik-http/Jarvis.git',
+      },
     },
     {
       image: '/projects/hotel-ease.png', // Corrected image path
