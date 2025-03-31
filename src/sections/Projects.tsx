@@ -44,11 +44,13 @@ function Projects() {
       {
       image: '/projects/june.png', // Corrected image path
       projectName: 'JUNE',
+      projectLink: '',
       projectDescription:
         'JUNE is an intelligent personal assistant designed to simplify everyday tasks through voice commands and interactive responses.',
       projectTech: ['Python'],
       projectExternalLinks: {
-        github: 'https://github.com/Koushik-http/Voice-Assistant.git',
+        github: 'https://github.com/Koushik-http/Jarvis.git',
+        externalLink: '',
       },
     },
     {
